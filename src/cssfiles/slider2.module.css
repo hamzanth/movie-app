@@ -1,0 +1,39 @@
+.sliderWrapper {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+.sliderTrack {
+  display: flex;
+  /* width: 300%; */
+  animation: scrollLeft 30s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-150%);
+  }
+}
+
+.sliderItem {
+  flex: 0 0 25%;
+  box-sizing: border-box;
+}
+
+.sliderImg {
+  width: 100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+}
+.sliderCaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
